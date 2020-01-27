@@ -112,8 +112,11 @@
   margin-top: 1em;
 }
 .article-content .gist .gist-file .gist-meta a {
-  color: #00f;
+  color: color-blue;
   font-weight: normal;
+}
+.article-content .gist .gist-file .gist-meta a:hover {
+  color: color-theme;
 }
 pre .comment,
 pre .title {
