@@ -7,7 +7,7 @@
     
 
     <title>
-      归档 
+      A short introduction of How I Built My Site | Victor Lee 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,14 +16,18 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://yoursite.com/archive/index.html">
+    <meta name="description" content="我的建站之路我这个小站是使用的Hexo框架搭建的github pages。我使用的是huno主题，它是一个基于uno的主题。此外我还加上了基于gitalk的评论系统，欢迎大家来留言啊~。 建站基本没有遇到啥问题，主要是参考了官方文档的一些指示，这里就不赘述了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A short introduction of How I Built My Site | Victor Lee">
+<meta property="og:url" content="http://yoursite.com/2020/01/27/A-short-introduction-of-How-I-Built-My-Site/index.html">
 <meta property="og:site_name" content="Victor Lee">
+<meta property="og:description" content="我的建站之路我这个小站是使用的Hexo框架搭建的github pages。我使用的是huno主题，它是一个基于uno的主题。此外我还加上了基于gitalk的评论系统，欢迎大家来留言啊~。 建站基本没有遇到啥问题，主要是参考了官方文档的一些指示，这里就不赘述了。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-01-26T12:20:20.000Z">
-<meta property="article:modified_time" content="2020-01-27T09:58:46.848Z">
+<meta property="article:published_time" content="2020-01-27T10:49:28.000Z">
+<meta property="article:modified_time" content="2020-01-27T12:04:55.557Z">
 <meta property="article:author" content="Victor Lee">
+<meta property="article:tag" content="static website">
+<meta property="article:tag" content="learning">
 <meta name="twitter:card" content="summary">
     
     
@@ -198,54 +202,75 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">归档</h1>
+    <h1 class="post-title">A short introduction of How I Built My Site</h1>
 
-    <section id="post-content" class="article-content post">
-        
-    </section>
+    
 
+    <div class="post-meta">
+      <time datetime="2020-01-27" class="post-meta__date date">2020-01-27</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/learning/">learning</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/learning/" rel="tag">learning</a>, <a class="tags-link" href="/tags/static-website/" rel="tag">static website</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
 
   </header>
 
+  <section id="post-content" class="article-content post">
+    <h2 id="我的建站之路"><a href="#我的建站之路" class="headerlink" title="我的建站之路"></a>我的建站之路</h2><p>我这个小站是使用的<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>框架搭建的github pages。<br>我使用的是<a href="https://github.com/letiantian/huno" target="_blank" rel="noopener">huno</a>主题，它是一个基于<a href="https://github.com/daleanthony/uno/" target="_blank" rel="noopener">uno</a>的主题。<br>此外我还加上了基于<a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">gitalk</a>的评论系统，欢迎大家来留言啊~。</p>
+<p>建站基本没有遇到啥问题，主要是参考了官方文档的一些指示，这里就不赘述了。</p>
+
+  </section>
+
+  
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    <section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link href="https://cdn.bootcss.com/gitalk/1.4.0/gitalk.min.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/gitalk/1.4.0/gitalk.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: '121d966e7636d0af97a3',
+            clientSecret: '4269f3928b8fed1da17f931ca8eb919dfb60aaa1',
+            repo: 'blog-comments',
+            owner: 'Hexa4C',
+            admin: 'Hexa4C',
+            id: md5(location.pathname),  // Ensure uniqueness and length less than 50
+            perPage: 50,
+            distractionFreeMode: 'false',
+            createIssueManually: 'false',
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+</section>
+  
+
+
 </article>
 
-<div class="archive-meta">
 
-
-    <h3>分类</h3>
-
-    <div class="categorieslist">
-        
-          
-            <span><a href="/categories/learning/" title="learning">learning<sup>1</sup></a></span>
-          
-        
-     </div>
-
-
-
-    <h3>标签</h3>
-    <div class="tagslist">
-        
-            
-                <span><a href="/tags/static-website/" title="static website">static website<sup>1</sup></a></span>
-            
-        
-            
-                <span><a href="/tags/learning/" title="learning">learning<sup>1</sup></a></span>
-            
-        
-    </div>
-
-
-
-    <h3>归档</h3>
-    <div class="archiveslist">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-
-
-</div>
             <footer class="footer">
 
     <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno" target="_blank" rel="noopener">Huno</a></span>
@@ -273,6 +298,19 @@ classes that you can use:
 
 
     
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
