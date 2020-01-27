@@ -251,7 +251,8 @@ classes that you can use:
             admin: 'Hexa4C',
             id: md5(location.pathname),  // Ensure uniqueness and length less than 50
             perPage: 50,
-            distractionFreeMode: 'false'
+            distractionFreeMode: 'false',
+            createIssueManually: 'false',
         })
 
         gitalk.render('gitalk-container')
