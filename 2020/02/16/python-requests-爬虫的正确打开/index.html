@@ -23,18 +23,18 @@
 <meta property="og:site_name" content="Victor Lee">
 <meta property="og:description" content="最近我用python的requests库写了一些爬虫。之前都是用的selenium，urllib之类的库，结果selenium停止更新了，urllib用起来……实在是感觉不够方便。于是在知乎上search之后，开始使用别人推荐的requests库。 刚开始使用，也不可能把文档完全看一遍，所以经常会遇到一些问题（菜鸟飞过。。。） 问题1 网页的动态加载见另一篇blog一些爬虫 – some craw">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.postimg.cc/sXs9tK4C/TIM-20200216215725.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/16/39ylNV.png">
 <meta property="og:image" content="https://i.postimg.cc/KvH80gGQ/TIM-20200216222149.png">
 <meta property="og:image" content="https://i.postimg.cc/52JQBCnG/TIM-20200216222316.png">
 <meta property="og:image" content="https://i.postimg.cc/vZDFSPq6/TIM-20200216222740.png">
 <meta property="article:published_time" content="2020-02-16T13:10:14.000Z">
-<meta property="article:modified_time" content="2020-02-16T14:55:34.957Z">
+<meta property="article:modified_time" content="2020-02-16T15:04:10.996Z">
 <meta property="article:author" content="Victor Lee">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="crawler">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.postimg.cc/sXs9tK4C/TIM-20200216215725.png">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/16/39ylNV.png">
     
     
     
@@ -238,10 +238,10 @@ classes that you can use:
   <section id="post-content" class="article-content post">
     <p>最近我用python的requests库写了一些爬虫。之前都是用的selenium，urllib之类的库，结果selenium停止更新了，urllib用起来……实在是感觉不够方便。于是在知乎上search之后，开始使用别人推荐的requests库。</p>
 <p>刚开始使用，也不可能把文档完全看一遍，所以经常会遇到一些问题（菜鸟飞过。。。）</p>
-<h2 id="问题1-网页的动态加载"><a href="#问题1-网页的动态加载" class="headerlink" title="问题1 网页的动态加载"></a>问题1 网页的动态加载</h2><p>见另一篇blog<a href="">一些爬虫 – some crawlers</a>，我写的第一个爬虫是爬取谣言语料的一个爬虫。语料来源是<a href="https://vp.fact.qq.com/">腾讯较真平台</a>。这个网页是动态加载的，因此要想办法get到所有的内容。（说起来这个网页感觉对非移动端的适配做的真的贼差，而且就算是移动端也只有微信内打开或是QQ浏览器，以及win10的edge能拉上来多的内容。<del>难道这就是🐧的阴谋？pony微笑.jpg</del>）</p>
+<h2 id="问题1-网页的动态加载"><a href="#问题1-网页的动态加载" class="headerlink" title="问题1 网页的动态加载"></a>问题1 网页的动态加载</h2><p>见另一篇blog<a href="https://hexa4c.github.io/2020/02/16/%E4%B8%80%E4%BA%9B%E7%88%AC%E8%99%AB-some-crawlers/" target="_blank" rel="noopener">一些爬虫 – some crawlers</a>，我写的第一个爬虫是爬取谣言语料的一个爬虫。语料来源是<a href="https://vp.fact.qq.com/" target="_blank" rel="noopener">腾讯较真平台</a>。这个网页是动态加载的，因此要想办法get到所有的内容。（说起来这个网页感觉对非移动端的适配做的真的贼差，而且就算是移动端也只有微信内打开或是QQ浏览器，以及win10的edge能拉上来多的内容。<del>难道这就是🐧的阴谋？pony微笑.jpg</del>）</p>
 <p>回归正题，探索这个问题解决方案的过程如下。我查了很多博客问答之类的，找到如下的方法。</p>
 <p>首先我们打开目标网页，按F12打开检查元素侧边栏，打开其中的网络一栏，</p>
-<p><img src="https://i.postimg.cc/sXs9tK4C/TIM-20200216215725.png" alt="网络栏在这"></p>
+<p><img src="https://s2.ax1x.com/2020/02/16/39ylNV.png" alt="网络栏在这"></p>
 <p>这时我们看侧边栏底部会发现加载网页过程中浏览器共发送了62个请求，</p>
 <p><img src="https://i.postimg.cc/KvH80gGQ/TIM-20200216222149.png" alt="侧边栏底部显示62个请求"></p>
 <p>然后我们手动将网页上拉使它加载早期的内容，然后会发现多了11个请求，</p>
