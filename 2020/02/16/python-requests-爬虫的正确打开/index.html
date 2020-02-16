@@ -24,11 +24,11 @@
 <meta property="og:description" content="最近我用python的requests库写了一些爬虫。之前都是用的selenium，urllib之类的库，结果selenium停止更新了，urllib用起来……实在是感觉不够方便。于是在知乎上search之后，开始使用别人推荐的requests库。 刚开始使用，也不可能把文档完全看一遍，所以经常会遇到一些问题（菜鸟飞过。。。） 问题1 网页的动态加载见另一篇blog一些爬虫 – some craw">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s2.ax1x.com/2020/02/16/39ylNV.png">
-<meta property="og:image" content="https://i.postimg.cc/KvH80gGQ/TIM-20200216222149.png">
-<meta property="og:image" content="https://i.postimg.cc/52JQBCnG/TIM-20200216222316.png">
-<meta property="og:image" content="https://i.postimg.cc/vZDFSPq6/TIM-20200216222740.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/16/39yjU0.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/16/396MKH.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/16/396lqA.png">
 <meta property="article:published_time" content="2020-02-16T13:10:14.000Z">
-<meta property="article:modified_time" content="2020-02-16T15:04:10.996Z">
+<meta property="article:modified_time" content="2020-02-16T15:10:51.869Z">
 <meta property="article:author" content="Victor Lee">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="python">
@@ -243,11 +243,11 @@ classes that you can use:
 <p>首先我们打开目标网页，按F12打开检查元素侧边栏，打开其中的网络一栏，</p>
 <p><img src="https://s2.ax1x.com/2020/02/16/39ylNV.png" alt="网络栏在这"></p>
 <p>这时我们看侧边栏底部会发现加载网页过程中浏览器共发送了62个请求，</p>
-<p><img src="https://i.postimg.cc/KvH80gGQ/TIM-20200216222149.png" alt="侧边栏底部显示62个请求"></p>
+<p><img src="https://s2.ax1x.com/2020/02/16/39yjU0.png" alt="侧边栏底部显示62个请求"></p>
 <p>然后我们手动将网页上拉使它加载早期的内容，然后会发现多了11个请求，</p>
-<p><img src="https://i.postimg.cc/52JQBCnG/TIM-20200216222316.png" alt="多了11个请求"></p>
+<p><img src="https://s2.ax1x.com/2020/02/16/396MKH.png" alt="多了11个请求"></p>
 <p>所以加载的内容一定在这11个请求中。仔细寻找内容包含<code>text</code>的请求我们可以定位其中一条名称以<code>loadmore</code>开头的请求，单击查看它的正文会发现响应正文内容就是新加载的内容，因此这就是我们需要构造的请求。</p>
-<p><img src="https://i.postimg.cc/vZDFSPq6/TIM-20200216222740.png" alt="找到它啦！"></p>
+<p><img src="https://s2.ax1x.com/2020/02/16/396lqA.png" alt="找到它啦！"></p>
 <p>它的请求url是</p>
 <p><code>https://vp.fact.qq.com/loadmore?artnum=0&amp;page=1&amp;_=1581862977119&amp;callback=jsonp1</code></p>
 <p>如此我们还可以再得到更多url，</p>
